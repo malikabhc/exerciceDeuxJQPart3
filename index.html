@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+    <title>exercice_2</title>
+  </head>
+  <body>
+    <input type="text" value="0" id="text" />
+    <button type="button" name="button" id="more">+</button>
+    <button type="button" name="button" id="less">-</button>
+    <script>
+      var counter = 0;
+        $(document).ready(function () {
+          $('#more').click(function () {
+            counter++;
+          $('#text').val(counter);
+          })
+          $('#less').click(function () {
+            counter--;
+          $('#text').val(counter);
+          })
+        });
+    </script>
+  </body>
+</html>
